@@ -1,7 +1,7 @@
 /* ===== HERO ===== */
 .hero {
   position: relative;
-  min-height: 100dvh;
+  min-height: 80vh;
   display: flex;
   align-items: center;
   overflow: hidden;

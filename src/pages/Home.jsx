@@ -99,7 +99,7 @@ export default function Home() {
               <Link to="/catalogo" className="btn btn-primary btn-large">
                 🪵 Ver Catálogo
               </Link>
-              <Link to="/hacer-pedido" className="btn btn-secondary btn-large">
+              <Link to="/hacer-pedido" className="btn btn-outline-white btn-large">
                 🛒 Hacer Pedido
               </Link>
             </div>
