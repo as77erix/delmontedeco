@@ -307,9 +307,115 @@
 
 /* ===== MOBILE ===== */
 @media (max-width: 768px) {
-  .hero__inner { flex-direction: column; text-align: center; }
-  .hero__actions { justify-content: center; }
+  .hero {
+    min-height: 100dvh;
+    padding-top: 4rem;
+  }
+
+  .hero__inner {
+    flex-direction: column;
+    text-align: center;
+    padding: 2.5rem 0 5rem;
+    gap: 1.5rem;
+  }
+
+  .hero__content {
+    max-width: 100%;
+  }
+
+  .hero__title {
+    font-size: clamp(2.2rem, 10vw, 3.2rem);
+  }
+
+  .hero__subtitle {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .hero__actions {
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.75rem;
+    align-items: center;
+  }
+
+  .hero__actions .btn {
+    width: 100%;
+    max-width: 300px;
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+  }
+
   .hero__badge { display: none; }
+
   .home__banner__inner { flex-direction: column; text-align: center; }
   .home__banner__icons { flex-direction: row; justify-content: center; }
+
+  .home__featured {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  }
+
+  .home__cats {
+    grid-template-columns: 1fr;
+  }
+
+  .home__steps {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===== STICKY CTA MOBILE ===== */
+.home__sticky-cta {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .home__sticky-cta {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 500;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+    padding: 0.85rem 1.5rem;
+    gap: 0.75rem;
+    box-shadow: 0 -4px 24px rgba(74, 43, 20, 0.35);
+  }
+
+  .home__sticky-cta a {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.75rem 0.5rem;
+    border-radius: var(--radius-sm);
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all var(--transition-fast);
+  }
+
+  .home__sticky-cta__pedido {
+    background: white;
+    color: var(--color-primary-dark);
+  }
+
+  .home__sticky-cta__whatsapp {
+    background: rgba(255,255,255,0.15);
+    border: 1.5px solid rgba(255,255,255,0.5);
+    color: white;
+  }
+
+  .home__sticky-cta__icon {
+    font-size: 1.2rem;
+  }
+
+  /* Espacio al final de la página para que el sticky no tape contenido */
+  .home {
+    padding-bottom: 60px;
+  }
 }

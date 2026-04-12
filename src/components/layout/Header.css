@@ -198,8 +198,19 @@
 
   .header__cta {
     margin-left: 0;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     width: 100%;
     justify-content: center;
+    padding: 1rem 1.5rem !important;
+    font-size: 1.05rem !important;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark)) !important;
+    border: none !important;
+    border-radius: var(--radius-sm) !important;
+  }
+
+  .header__nav-link {
+    font-size: 1.15rem;
+    padding: 0.75rem 1rem;
+    color: var(--color-text) !important;
   }
 }

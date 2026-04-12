@@ -64,6 +64,23 @@ export default function Home() {
   return (
     <main className="home">
 
+      {/* ===== STICKY CTA MOBILE ===== */}
+      <div className="home__sticky-cta">
+        <Link to="/hacer-pedido" className="home__sticky-cta__pedido">
+          <span className="home__sticky-cta__icon">🛒</span>
+          Hacer Pedido
+        </Link>
+        <a
+          href="https://wa.me/5493764000000"
+          target="_blank"
+          rel="noreferrer"
+          className="home__sticky-cta__whatsapp"
+        >
+          <span className="home__sticky-cta__icon">💬</span>
+          WhatsApp
+        </a>
+      </div>
+
       {/* ===== HERO ===== */}
       <section className="hero">
         <div className="hero__bg" />
