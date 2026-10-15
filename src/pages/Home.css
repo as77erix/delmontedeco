@@ -383,6 +383,11 @@
     box-shadow: 0 -4px 24px rgba(74, 43, 20, 0.35);
   }
 
+  /* Que la barra fija no tape el final del footer */
+  body:has(.home__sticky-cta) .footer {
+    padding-bottom: 6rem;
+  }
+
   .home__sticky-cta a {
     flex: 1;
     display: flex;

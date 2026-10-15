@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import AuvanceCredit from './AuvanceCredit'
 import './Footer.css'
 
 export default function Footer() {
@@ -82,6 +83,7 @@ export default function Footer() {
           <p>© 2025 Del Monte Deco — Todos los derechos reservados</p>
           <p>Hecho con 🪵 en Misiones</p>
         </div>
+        <AuvanceCredit />
       </div>
     </footer>
   )
